@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+.calculator-container {   
+    max-width: 60%;
+    border: 1px solid #ddd;
+    margin: 30% auto;
+    box-shadow: 3px 4px 10px;
+    background: linear-gradient(to bottom right, rgb(54, 62, 180), rgb(141, 35, 141));
+}
+
+.display-answers {
+    font-size: 13px;
+    text-align: right;
+    padding: 4px;
+    color: #fff;
+    overflow-wrap: break-word;
+}
+
+.display-values {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    padding: 3px;
+    color: #fff;
+    overflow-wrap: break-word;
+}
+
+.operating-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95%;
+    margin: 13px auto;
+    padding: 10px;
+    text-align: center;
+    /* border: 2px solid #ddd; */
+}
+
+
+
+#percentage,
+#sqroot,
+#sqsub,
+#sqsubeq {
+    flex: 1 0 calc(25% - 5px);
+    padding: 10px;
+    background: lightcyan;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 5px 1px;
+    cursor: pointer;
+}
+
+
+#CE,
+#C,
+#backspace,
+#division {
+    flex: 1 0 calc(33.33% - 5px);
+    padding: 10px;
+    background: lightgray;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 5px 1px;
+    cursor: pointer;
+}
+
+
+#seven,
+#eight,
+#nine,
+#multiplication {
+    flex: 1 0 calc(25% - 5px);
+    padding: 10px;
+    background: lightblue;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+
+#four,
+#five,
+#six,
+#subtraction {
+    flex: 1 0 calc(25% - 5px);
+    padding: 10px;
+    background: lightblue;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+
+#one,
+#two,
+#three,
+#addition {
+    flex: 1 0 calc(25% - 5px);
+    padding: 10px;
+    background: lightblue;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+
+#space,
+#zero,
+#period,
+#equals {
+    flex: 1 0 calc(25% - 5px);
+    padding: 10px;
+    background: lightblue;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+
+#sqsubeq,
+#division,
+#multiplication,
+#addition,
+#subtraction,
+#equals {
+    background: lightcyan;
+    font-weight: bold;
+}
+
+.assignment-operator {
+    transition: all 1.5s linear;
+}
+
+.assignment-operator:hover {
+    background: rgb(76, 87, 185) !important;
+    color: #ddd;
+}
+
+.clear-operator {
+    transition: all 1.5s linear;
+}
+
+.clear-operator:hover {
+    background: rgb(201, 45, 45) !important;
+    color: #ddd;
+}
+
+.numeric {
+    transition: all 1.5s linear;
+}
+
+.numeric:hover {
+    background: rgb(255, 110, 52) !important;
+}
+
+@media screen and (min-width: 620px) {
+    .calculator-container {
+        max-width: 75%;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+
+    #CE,
+    #C,
+    #backspace,
+    #division,
+    #seven,
+    #eight,
+    #nine,
+    #multiplication
+    #four,
+    #five,
+    #six,
+    #subtraction
+    #one,
+    #two,
+    #three,
+    #addition
+    #space,
+    #zero,
+    #period,
+    #equals {
+        padding: 20px;
+    }
+
+    .calculator-container {
+        margin: 10% auto;
+    }
+    
+}
+
+@media screen and (min-width: 450px) {
+    .calculator-container {
+        max-width: 40%;
+    }
+}

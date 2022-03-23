@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="calculator-container">
+
+        <div data-previous-operand class="display-answers" id="answers"> </div>
+
+        <div data-current-operand class="display-values" id="display"></div>
+
+        <div class="inner-container">
+
+            <div class="operating-container">
+
+                <h5 data-clear  class="clear-operator button" id="CE">CE</h5>
+                <h5 data-delete  class="delete-operator button" id="C">C</h5>
+                <!-- <h5 class="clear-operator button" id="backspace">&Leftarrow;</h5> -->
+
+                <h5 data-operation  class="assignment-operator button" id="division">/</h5>
+
+                <h5 data-number class="numeric button" id="seven">7</h5>
+                <h5 data-number class="numeric button" id="eight">8</h5>
+                <h5 data-number class="numeric button" id="nine">9</h5>
+
+                <h5 data-operation class="assignment-operator button" id="multiplication">*</h5>
+
+                <h5 data-number class="numeric button" id="four">4</h5>
+                <h5 data-number class="numeric button" id="five">5</h5>
+                <h5 data-number class="numeric button" id="six">6</h5>
+
+                <h5 data-operation  class="assignment-operator button" id="subtraction">-</h5>
+
+                <h5 data-number class="numeric button" id="one">1</h5>
+                <h5 data-number class="numeric button" id="two">2</h5>
+                <h5 data-number class="numeric button" id="three">3</h5>
+
+                <h5 data-operation  class="assignment-operator button" id="addition">+</h5>
+
+                <h5 data-space  class="space button" id="space"> </h5>
+                <h5 data-number class="numeric button" id="zero">0</h5>
+                <h5 data-number class="numeric period button" id="period">.</h5>
+
+                <h5 data-equals class="button equals" id="equals">=</h5>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="calc.js"></script>
+</html>
